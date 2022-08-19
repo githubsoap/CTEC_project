@@ -25,6 +25,6 @@ app.route('/user/:username').get(userController.loginUser);
 app.route('/request').post(requestController.addRequest);
 app.route('/weather').get(userController.getWeather);
 
-app.listen(port, () => console.log('Listening on port ${port}!'))
+app.listen(port, () => console.log('Running!'))
 //console.log("web server running @ http://127.0.0.1:8080"); // output to console 
 
