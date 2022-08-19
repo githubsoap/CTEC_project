@@ -1,0 +1,44 @@
+<link rel="stylesheet" href="css/sign-in.css">
+<div class="modal fade " id="signUpModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg " role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close bg-light" data-dismiss="modal">
+                    <span>&times;</span>
+                </button>
+                <div class="header-txt">
+                    <h2><b>SIGN UP</b></h2>
+                    <p> Already have an account? <a href="#" id="login" data-toggle="modal" data-target="#signInModal"><i>Log in instead.</i></a></p>
+                </div>
+                <div class="col">
+                    <form style="height: 600px;">
+                        <div class="row" style="max-width: fit-content; justify-content: space-evenly;">
+                            <div class="col-sm">
+                                <input type="text" id="firstname" placeholder="FIRST NAME" required/>
+                            </div>
+                            <div class ="col-sm">
+                                <input type="text" id="lastname" placeholder="LAST NAME" />
+                            </div>
+                        </div>
+                        <div class="row" style="max-width: fit-content; justify-content: space-evenly;">
+                            <div class="col-sm">
+                                <input type="text" id="username-signup" placeholder="@username" required/>
+                            </div>
+                            <div class="col-sm">
+                                Birthday:<input type="date" id="date" required>
+                            </div>
+                        </div>
+                        <div class="row" style="max-width: fit-content; justify-content: space-evenly;">
+                            <div class="col-sm">
+                                <input type="email" id="email" placeholder="Email Address" required/>
+                            </div>
+                        </div>
+                        <input type="password" id="password-signup" placeholder="Enter password..." required/>
+                        <div style= "text-align: center;">
+                            <button type="button" onclick="addAccount();" data-dismiss="modal">Sign me up!</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>

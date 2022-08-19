@@ -1,0 +1,43 @@
+<div class="modal fade" id="newReviewModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header bg-dark text-center">
+                <h3 class="modal-title text-light">Add a Review</h3>
+                <button type="button" class="close bg-light" data-dismiss="modal">
+                    <span>&times;</span>
+                </button>
+            </div>
+            <div class="modal-body px-5">
+                <p>Please ensure that you have an account before you leave a review. Reviews made by guests are not posted on the website.</p>
+                <form id="reviewForm" style="height: 500px;">
+                    <div class="row" text-center id="reviewBody">
+                        <div>
+                            <label for="username">Username</label>
+                             <input type="text" id="username-new" class="form-control" required>
+                        </div>
+                        <div>
+                        <label for="userReviews">Review</label>
+                        <textarea id="userReviews-new" required class="form-control form-rounded" rows="3" cols="100%"></textarea>
+                        </div>
+                        <div>
+                            <label for="rating">Rating</label>
+                            <p>
+                                <img src="images/rating_bnw.png" style="height:50px;width:50px" class="pop" value="1" onmouseover="rateIt(this)" />
+                                <img src="images/rating_bnw.png" style="height:50px;width:50px" class="pop" value="2" onmouseover="rateIt(this)" />
+                                <img src="images/rating_bnw.png" style="height:50px;width:50px" class="pop" value="3" onmouseover="rateIt(this)" />
+                                <img src="images/rating_bnw.png" style="height:50px;width:50px" class="pop" value="4" onmouseover="rateIt(this)" />
+                                <img src="images/rating_bnw.png" style="height:50px;width:50px" class="pop" value="5" onmouseover="rateIt(this)" />
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal" id="submitReview" onClick="addReview()">Submit</button>
+                        <button type="button" class="btn btn-secondary bg-dark" data-dismiss="modal">Close</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+

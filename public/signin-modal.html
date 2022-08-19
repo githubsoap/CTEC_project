@@ -1,0 +1,23 @@
+<link rel="stylesheet" href="css/sign-in.css">
+<div class="modal fade " id="signInModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-sm " role="document">
+        <div class="modal-content">
+            <div class="modal-body px-10">
+                <button type="button" class="close bg-light" data-dismiss="modal">
+                    <span>&times;</span>
+                </button>
+                <div class="header-txt">
+                    <h2><b>LOG IN</b></h2>
+                    <p> Don't have an account yet? <a href="#" id="signup" data-toggle="modal" data-target="#signUpModal"><i>Create account.</i></a></p>
+                </div>
+                <form>
+                    <input type="text"  id="username-signin" placeholder="Enter username..." required/>
+                    <input type="password" id="password-signin" placeholder="Enter password..." required/>
+                    <div style= "text-align: center;">
+                        <button type="button" onclick="loginAccount();" data-dismiss="modal">LOG IN</button>
+                    </div>
+                </form>
+                </div>
+            </div>
+        </div>
+    </div>

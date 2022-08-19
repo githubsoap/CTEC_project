@@ -1,0 +1,33 @@
+<div class="modal fade" id="editReviewModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header bg-dark text-center">
+                <h3 class="modal-title text-light">Edit a Review</h3>
+                <button type="button" class="close bg-light" data-dismiss="modal">
+                    <span>&times;</span>
+                </button>
+            </div>
+            <div class="modal-body px-5">
+                <form id="reviewForm1" style="height: 500px;">
+                    <div class="row" text-center id="editreviewBody">
+                        <label for="username">Username</label>
+                        <input type="text" id="editusername" class="form-control" required>
+                        <label for="userReviews">Review</label>
+                 <textarea id="edituserReviews" required class="form-control form-rounded" rows="3" cols="100%"></textarea>
+                        <label for="rating">Rating</label>
+                        <img src="images/rating_bnw.png" class="editpop" style="height:50px;width:50px" value="1" onmouseover="rateIt(this)" />
+                        <img src="images/rating_bnw.png" class="editpop" style="height:50px;width:50px" value="2" onmouseover="rateIt(this)" />
+                        <img src="images/rating_bnw.png" class="editpop" style="height:50px;width:50px" value="3" onmouseover="rateIt(this)" />
+                        <img src="images/rating_bnw.png" class="editpop" style="height:50px;width:50px" value="4" onmouseover="rateIt(this)" />
+                        <img src="images/rating_bnw.png" class="editpop" style="height:50px;width:50px" value="5" onmouseover="rateIt(this)" />
+                    </div>
+
+                    <div class="modal-footer">
+  <button type="button" class="btn btn-primary" data-dismiss="modal" id="submitReview1" onClick="updateReview()">Submit</button>
+                        <button type="button" class="btn btn-secondary bg-dark" data-dismiss="modal">Close</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
