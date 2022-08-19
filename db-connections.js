@@ -5,7 +5,7 @@ var connection = mysql.createConnection({
     user: 'admin',
     password: 'CTECpassword1!',
     database:'gaming_review',
-    //connectTimeout: 30000
+    connectTimeout: 30000
 });
 
 connection.connect(err => {
