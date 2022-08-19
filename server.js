@@ -1,5 +1,5 @@
 var express = require("express"); //using the express web framework
-const port = 8080;
+const port = 3000;
 
 var equipmentController = require('./controllers/equipmentController');
 var reviewController = require('./controllers/reviewController');
