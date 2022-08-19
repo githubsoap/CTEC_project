@@ -1,5 +1,5 @@
 var express = require("express"); //using the express web framework
-const port = 3000;
+const port = 8080;
 
 var equipmentController = require('./controllers/equipmentController');
 var reviewController = require('./controllers/reviewController');
@@ -25,6 +25,6 @@ app.route('/user/:username').get(userController.loginUser);
 app.route('/request').post(requestController.addRequest);
 app.route('/weather').get(userController.getWeather);
 
-app.listen(port, () => console.log('Running!'))
+app.listen(port, () => console.log('Running on port ', port))
 //console.log("web server running @ http://127.0.0.1:8080"); // output to console 
 
